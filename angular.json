@@ -20,9 +20,7 @@
             "outputPath": "dist/app",
             "index": "projects/app/src/index.html",
             "browser": "projects/app/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -79,10 +77,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -104,11 +99,10 @@
             "configDir": "projects/app/.storybook",
             "browserTarget": "app:build",
             "compodoc": true,
-            "compodocArgs": [
-              "-e",
-              "json",
-              "-d",
-              "projects/app"
+            "compodocArgs": ["-e", "json", "-d", "projects/app"],
+            "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "projects/app/src/styles.scss"
             ],
             "port": 6006
           }
@@ -119,11 +113,10 @@
             "configDir": "projects/app/.storybook",
             "browserTarget": "app:build",
             "compodoc": true,
-            "compodocArgs": [
-              "-e",
-              "json",
-              "-d",
-              "projects/app"
+            "compodocArgs": ["-e", "json", "-d", "projects/app"],
+            "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "projects/app/src/styles.scss"
             ],
             "outputDir": "storybook-static"
           }
