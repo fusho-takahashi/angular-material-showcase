@@ -41,4 +41,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
+# Storybook files
 *storybook.log
+projects/**/documentation.json
