@@ -44,3 +44,7 @@ Thumbs.db
 # Storybook files
 *storybook.log
 projects/**/documentation.json
+/storybook-static
+
+# screenshots
+/__screenshots__
