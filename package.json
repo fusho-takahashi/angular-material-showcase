@@ -9,7 +9,9 @@
     "test": "ng test",
     "storybook": "ng run app:storybook",
     "build-storybook": "ng run app:build-storybook",
-    "storycap": "npm run build-storybook && storycap http://localhost:6006 --serverCmd 'npx http-server ./storybook-static -p 6006' -o './vrt/actual'"
+    "storycap": "npm run build-storybook && storycap http://localhost:6006 --serverCmd 'npx http-server ./storybook-static -p 6006' -o './vrt/actual'",
+    "vrt": "reg-cli ./vrt/actual ./vrt/expected ./vrt/diff -R ./vrt/report.html",
+    "update-expected-screenshots": "reg-cli ./vrt/actual ./vrt/expected --update"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +49,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "reg-cli": "^0.18.8",
     "storybook": "^8.4.1",
     "storycap": "^5.0.1",
     "typescript": "~5.5.2"

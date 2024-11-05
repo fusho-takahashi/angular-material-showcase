@@ -48,3 +48,6 @@ projects/**/documentation.json
 
 # screenshots
 /vrt/actual
+/vrt/diff
+/vrt/report.html
+reg.json
